@@ -1,0 +1,137 @@
+/* misc defaults */
+:root {
+  --max-width: 80%;
+  --font-sans: "Atkinson Hyperlegible Next", ui-sans-serif, sans-serif;
+  --font-mono: "Iosevka Web", ui-monospace, monospace;
+  --font-size: 16px
+}
+
+main {
+  max-width: var(--max-width);
+}
+
+header h1 {
+  font-family: var(--font-mono);
+  font-weight: 900;
+}
+
+body {
+  text-align: justify;
+  font-family: var(--font-sans);
+  font-weight: 400;
+}
+
+html {
+  font-size: var(--font-size);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+li {
+  list-style-position: inside;
+}
+
+hr {
+  margin: 0 0 1em 0;
+}
+
+h2,
+h3 {
+  margin: 0.6em 0 0 0;
+}
+
+/* force min height to avoid jitter when font loads */
+header {
+  min-height: 44px;
+}
+
+/* strip padding */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* add padding to bottom of page */
+main {
+  margin: 0 auto 10px auto;
+}
+
+/* colour scheme (light + dark) */
+:root {
+  --color-bg: #e2e8f0;
+  --color-text: #1e3765;
+  --color-text-muted: #64748b;
+  --color-link: #0066cc;
+  --color-link-hover: #0052a3;
+  --color-bar: #aad4ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1e3765;
+    --color-text: #e2e8f0;
+    --color-text-muted: #94a3b8;
+    --color-link: #60a5fa;
+    --color-link-hover: #93c5fd;
+  }
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+hr {
+  color: var(--color-bar);
+}
+
+/* nav bar alignment/styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.15em 0 0.15em 0;
+}
+
+header nav ul {
+  font-size: 0em;
+}
+
+header nav ul li {
+  font-size: var(--font-size);
+}
+
+header nav ul li:not(:first-child)::before {
+  content: "|";
+  margin-right: 6px;
+  color: var(--color-text-muted);
+}
+
+header nav ul li {
+  border-color: var(--color-text);
+  margin-right: 6px;
+  list-style-type: none;
+  display: inline;
+}
+
+/* mute link colours in navbar unless hovered */
+header nav a {
+  color: var(--color-text-muted);
+}
+
+header nav a:hover {
+  color: var(--color-link);
+}

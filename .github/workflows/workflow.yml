@@ -1,0 +1,48 @@
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: 'ubuntu-latest'
+    container:
+      image: 'ghcr.io/typst/typst'
+    permissions:
+      contents: 'write'
+    steps:
+      - run: |
+          apk add 'curl' 'unzip' 'jq' 'findutils' 'tar'
+      - uses: 'actions/checkout@v6'
+      - uses: 'astral-sh/setup-uv@v8.1.0'
+      - uses: 'actions/cache/restore@v5'
+        id: 'cache'
+        with:
+          path: 'static/vendor/font/**/*.woff2'
+          key: "font-cache-${{ hashFiles('./static/vendor/font/up.sh') }}"
+      - if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          sh './up.sh'
+        working-directory: './static/vendor/font'
+      - if: steps.cache.outputs.cache-hit != 'true'
+        uses: 'actions/cache/save@v5'
+        with:
+          path: 'static/vendor/font/**/*.woff2'
+          key: "font-cache-${{ hashFiles('./static/vendor/font/up.sh') }}"
+      - run: |
+          uv run --script 'build.py' './dist'
+      - if: ${{ success() && format('refs/heads/{0}', github.event.repository.default_branch) == github.ref }}
+        run: |
+          set -euxo pipefail
+
+          apk add 'git'
+
+          touch '.nojekyll'
+          git init -b 'gh-pages'
+          git add '.'
+          git config 'user.name' 'github-actions[bot]' && git config 'user.email' 'github-actions[bot]@users.noreply.github.com'
+          git commit -m 'publish: ${{ github.sha }}'
+          git push -f 'https://git:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git' 'gh-pages'
+        working-directory: './dist'
+      - uses: 'actions/upload-artifact@v7'
+        with:
+          name: 'site'
+          path: 'dist/'

@@ -1,0 +1,449 @@
+Adler_2023:
+  type: article
+  title: Emergence of division of labor in tissues through cell interactions and spatial cues
+  author:
+    - "Adler, Miri"
+    - "Moriel, Noa"
+    - "Goeva, Aleksandrina"
+    - "Avraham-Davidi, Inbal"
+    - "Mages, Simon"
+    - "Adams, Taylor S."
+    - "Kaminski, Naftali"
+    - "Macosko, Evan Z."
+    - "Regev, Aviv"
+    - "Medzhitov, Ruslan"
+    - "Nitzan, Mor"
+  date: "2023-05"
+  page-range: "112412"
+  url: http://dx.doi.org/10.1016/j.celrep.2023.112412
+  serial-number:
+    doi: "10.1016/j.celrep.2023.112412"
+    issn: "2211-1247"
+  parent:
+    type: periodical
+    title: Cell Reports
+    publisher: Elsevier BV
+    issue: 5
+    volume: 42
+Afanasiev_2026:
+  type: article
+  title: "found: Inferring cell-level perturbation from structured label noise in single-cell data"
+  author:
+    - "Afanasiev, Elia"
+    - "Goeva, Aleksandrina"
+  date: "2026-04"
+  url: http://dx.doi.org/10.64898/2026.04.10.717768
+  serial-number:
+    doi: "10.64898/2026.04.10.717768"
+  parent:
+    type: periodical
+    publisher: openRxiv
+Blumenthal_2021:
+  type: article
+  title: "Why {Do} {We} {Plot} {Data}?"
+  author:
+    - "Blumenthal, Kelly"
+    - "Goeva, Aleksandrina"
+    - "Stoudt, Sara"
+    - "Trisovic, Ana"
+  date: "2021-09-10"
+  note: https://hdsr.mitpress.mit.edu/pub/49opxv6v
+  parent:
+    type: periodical
+    title: Harvard Data Science Review
+    publisher: The MIT Press
+Cable_2021:
+  type: article
+  title: Robust decomposition of cell type mixtures in spatial transcriptomics
+  author:
+    - "Cable, Dylan M."
+    - "Murray, Evan"
+    - "Zou, Luli S."
+    - "Goeva, Aleksandrina"
+    - "Macosko, Evan Z."
+    - "Chen, Fei"
+    - "Irizarry, Rafael A."
+  date: "2021-02"
+  page-range: "517-526"
+  url: http://dx.doi.org/10.1038/s41587-021-00830-w
+  serial-number:
+    doi: "10.1038/s41587-021-00830-w"
+    issn: "1546-1696"
+  parent:
+    type: periodical
+    title: Nature Biotechnology
+    publisher: "Springer Science, Business Media LLC"
+    issue: 4
+    volume: 40
+Campbell_2025:
+  type: article
+  title: Cells Keep Diverse Company in Diseased Tissues
+  author:
+    - "Campbell, Kieran R."
+    - "Goeva, Aleksandrina"
+  date: "2025-05"
+  page-range: "2351-2352"
+  url: http://dx.doi.org/10.1158/0008-5472.CAN-25-2070
+  serial-number:
+    doi: "10.1158/0008-5472.can-25-2070"
+    issn: "1538-7445"
+  parent:
+    type: periodical
+    title: Cancer Research
+    publisher: American Association for Cancer Research (AACR)
+    issue: 13
+    volume: 85
+Dolan_2023:
+  type: article
+  title: Exposure of iPSC-derived human microglia to brain substrates enables the generation and manipulation of diverse transcriptional states in vitro
+  author:
+    - "Dolan, Michael-John"
+    - "Therrien, Martine"
+    - "Jereb, Saša"
+    - "Kamath, Tushar"
+    - "Gazestani, Vahid"
+    - "Atkeson, Trevor"
+    - "Marsh, Samuel E."
+    - "Goeva, Aleksandrina"
+    - "Lojek, Neal M."
+    - "Murphy, Sarah"
+    - "White, Cassandra M."
+    - "Joung, Julia"
+    - "Liu, Bingxu"
+    - "Limone, Francesco"
+    - "Eggan, Kevin"
+    - "Hacohen, Nir"
+    - "Bernstein, Bradley E."
+    - "Glass, Christopher K."
+    - "Leinonen, Ville"
+    - "Blurton-Jones, Mathew"
+    - "Zhang, Feng"
+    - "Epstein, Charles B."
+    - "Macosko, Evan Z."
+    - "Stevens, Beth"
+  date: "2023-07"
+  page-range: "1382-1390"
+  url: http://dx.doi.org/10.1038/s41590-023-01558-2
+  serial-number:
+    doi: "10.1038/s41590-023-01558-2"
+    issn: "1529-2916"
+  parent:
+    type: periodical
+    title: Nature Immunology
+    publisher: "Springer Science, Business Media LLC"
+    issue: 8
+    volume: 24
+Frost_2020:
+  type: article
+  title: "Early-Career View on Data Science Challenges: Responsibility, Rigor, and Accessibility"
+  author:
+    - "Frost, Shuang"
+    - "Goeva, Aleksandrina"
+    - "Seaton, William"
+    - "Stoudt, Sara"
+    - "Trisovic, Ana"
+  date: "2020-09"
+  url: http://dx.doi.org/10.1162/99608f92.b211611a
+  serial-number:
+    doi: "10.1162/99608f92.b211611a"
+  parent:
+    type: periodical
+    title: Harvard Data Science Review
+    publisher: MIT Press
+Frost_2021:
+  type: article
+  title: Kaleidoscopic Perspectives on Practicum-Based Data Science Education
+  author:
+    - "Frost, Shuang"
+    - "Goeva, Aleksandrina"
+    - "Pombra, Javin"
+    - "Seaton, Will"
+    - "Stoudt, Sara"
+    - "Trisovic, Ana"
+    - "Wang, Chris"
+    - "Zucker, Catherine"
+  date: "2021-02"
+  url: http://dx.doi.org/10.1162/99608f92.ba6336bc
+  serial-number:
+    doi: "10.1162/99608f92.ba6336bc"
+  parent:
+    type: periodical
+    title: Harvard Data Science Review
+    publisher: MIT Press
+Goeva_2014:
+  type: article
+  title: Reconstructing input models via simulation optimization
+  author:
+    - "Goeva, Aleksandrina"
+    - "Lam, Henry"
+    - "Zhang, Bo"
+  date: "2014-12"
+  page-range: "698-709"
+  url: http://dx.doi.org/10.1109/WSC.2014.7019933
+  serial-number:
+    doi: "10.1109/wsc.2014.7019933"
+  parent:
+    type: proceedings
+    title: Proceedings of the Winter Simulation Conference 2014
+    publisher: IEEE
+Goeva_2016:
+  type: article
+  title: Comment
+  author:
+    - "Goeva, Aleksandrina"
+    - "Kolaczyk, Eric D."
+  date: "2016-10"
+  page-range: "1405-1408"
+  url: http://dx.doi.org/10.1080/01621459.2016.1245072
+  serial-number:
+    doi: "10.1080/01621459.2016.1245072"
+    issn: "1537-274X"
+  parent:
+    type: periodical
+    title: Journal of the American Statistical Association
+    publisher: Informa UK Limited
+    issue: 516
+    volume: 111
+Goeva_2019:
+  type: article
+  title: Optimization-Based Calibration of Simulation Input Models
+  author:
+    - "Goeva, Aleksandrina"
+    - "Lam, Henry"
+    - "Qian, Huajie"
+    - "Zhang, Bo"
+  date: "2019-09"
+  page-range: "1362-1382"
+  url: http://dx.doi.org/10.1287/opre.2018.1801
+  serial-number:
+    doi: "10.1287/opre.2018.1801"
+    issn: "1526-5463"
+  parent:
+    type: periodical
+    title: Operations Research
+    publisher: Institute for Operations Research
+Goeva_2020:
+  type: article
+  title: "Toward Reproducible and Extensible Research: from Values to Action"
+  author:
+    - "Goeva, Aleksandrina"
+    - "Stoudt, Sara"
+    - "Trisovic, Ana"
+  date: "2020-12"
+  url: http://dx.doi.org/10.1162/99608f92.1cc3d72a
+  serial-number:
+    doi: "10.1162/99608f92.1cc3d72a"
+  parent:
+    type: periodical
+    title: Harvard Data Science Review
+    publisher: MIT Press
+    issue: 4
+    volume: 2
+Goeva_2021a:
+  type: article
+  title: Recipes for Connector Courses From the Early-Career Board Kitchen
+  author:
+    - "Goeva, Aleksandrina"
+    - "Jones, Peyton"
+    - "Stoudt, Sara"
+    - "Trisovic, Ana"
+  date: "2021-06"
+  url: http://dx.doi.org/10.1162/99608f92.f7c60746
+  serial-number:
+    doi: "10.1162/99608f92.f7c60746"
+  parent:
+    type: periodical
+    title: Harvard Data Science Review
+    publisher: MIT Press
+Goeva_2021b:
+  type: article
+  title: "COVID-19 {Case} {Fatality} {Rate} {Bias} {Visual} {Explainer}"
+  author:
+    - "Goeva, Aleksandrina"
+    - "Stoudt, Sara"
+  date: "2021-02-25"
+  note: https://hdsr.mitpress.mit.edu/pub/p6sdle0t
+  parent:
+    type: periodical
+    title: Harvard Data Science Review
+    publisher: The MIT Press
+    issue: Special Issue 1
+Goeva_2024:
+  type: article
+  title: "HiDDEN: a machine learning method for detection of disease-relevant populations in case-control single-cell transcriptomics data"
+  author:
+    - "Goeva, Aleksandrina"
+    - "Dolan, Michael-John"
+    - "Luu, Judy"
+    - "Garcia, Eric"
+    - "Boiarsky, Rebecca"
+    - "Gupta, Rajat M."
+    - "Macosko, Evan"
+  date: "2024-11"
+  url: http://dx.doi.org/10.1038/s41467-024-53666-8
+  serial-number:
+    doi: "10.1038/s41467-024-53666-8"
+    issn: "2041-1723"
+  parent:
+    type: periodical
+    title: Nature Communications
+    publisher: "Springer Science, Business Media LLC"
+    issue: 1
+    volume: 15
+Kramer_2018:
+  type: article
+  title: "Initial evaluation of the effects of an environmental‐focused problem‐solving intervention for transition‐age young people with developmental disabilities: Project TEAM"
+  author:
+    - "Kramer, Jessica M"
+    - "Helfrich, Christine"
+    - "Levin, Melissa"
+    - "Hwang, I‐Ting"
+    - "Samuel, Preethy S"
+    - "Carrellas, Ann"
+    - "Schwartz, Ariel E"
+    - "Goeva, Aleksandrina"
+    - "Kolaczyk, Eric D"
+  date: "2018-03"
+  page-range: "801-809"
+  url: http://dx.doi.org/10.1111/dmcn.13715
+  serial-number:
+    doi: "10.1111/dmcn.13715"
+    issn: "1469-8749"
+  parent:
+    type: periodical
+    title: Developmental Medicine &amp; Child Neurology
+    publisher: Wiley
+    issue: 8
+    volume: 60
+Kramer_2019:
+  type: article
+  title: "Outcomes of an Environmental-Focused, Problem-Solving Intervention for Transition-Age Youth: Project TEAM"
+  author:
+    - "Kramer, Jessica"
+    - "Helfrich, Christine"
+    - "Schwartz, Ariel"
+    - "Samuel, Preethy"
+    - "Kolaczyk, Eric"
+    - "Goeva, Aleksandrina"
+  date: "2019-08"
+  page-range: "7311515321p1"
+  url: http://dx.doi.org/10.5014/ajot.2019.73S1-RP101C
+  serial-number:
+    doi: "10.5014/ajot.2019.73s1-rp101c"
+    issn: "0272-9490"
+  parent:
+    type: periodical
+    title: American Journal of Occupational Therapy
+    publisher: AOTA Press
+    issue: "4_Supplement_1"
+    volume: 73
+Kunin_2019:
+  type: article
+  title: Loss Landscapes of Regularized Linear Autoencoders
+  author:
+    - "Kunin, Daniel"
+    - "Bloom, Jonathan"
+    - "Goeva, Aleksandrina"
+    - "Seed, Cotton"
+  date: 2019
+  editor:
+    - "Chaudhuri, Kamalika"
+    - "Salakhutdinov, Ruslan"
+  page-range: "3560-3569"
+  url: https://proceedings.mlr.press/v97/kunin19a.html
+  abstract: "Autoencoders are a deep learning model for representation learning. When trained to minimize the distance between the data and its reconstruction, linear autoencoders (LAEs) learn the subspace spanned by the top principal directions but cannot learn the principal directions themselves. In this paper, we prove that $L_2$-regularized LAEs are symmetric at all critical points and learn the principal directions as the left singular vectors of the decoder. We smoothly parameterize the critical manifold and relate the minima to the MAP estimate of probabilistic PCA. We illustrate these results empirically and consider implications for PCA algorithms, computational neuroscience, and the algebraic topology of learning."
+  parent:
+    type: proceedings
+    title: Proceedings of the 36th International Conference on Machine Learning
+    publisher: PMLR
+    volume: 97
+    parent:
+      type: proceedings
+      title: Proceedings of Machine Learning Research
+Rodriques_2019:
+  type: article
+  title: "Slide-seq: A scalable technology for measuring genome-wide expression at high spatial resolution"
+  author:
+    - "Rodriques, Samuel G."
+    - "Stickels, Robert R."
+    - "Goeva, Aleksandrina"
+    - "Martin, Carly A."
+    - "Murray, Evan"
+    - "Vanderburg, Charles R."
+    - "Welch, Joshua"
+    - "Chen, Linlin M."
+    - "Chen, Fei"
+    - "Macosko, Evan Z."
+  date: "2019-03"
+  page-range: "1463-1467"
+  url: http://dx.doi.org/10.1126/science.aaw1219
+  serial-number:
+    doi: "10.1126/science.aaw1219"
+    issn: "1095-9203"
+  parent:
+    type: periodical
+    title: Science
+    publisher: American Association for the Advancement of Science (AAAS)
+    issue: 6434
+    volume: 363
+Saunders_2018:
+  type: article
+  title: Molecular Diversity and Specializations among the Cells of the Adult Mouse Brain
+  author:
+    - "Saunders, Arpiar"
+    - "Macosko, Evan Z."
+    - "Wysoker, Alec"
+    - "Goldman, Melissa"
+    - "Krienen, Fenna M."
+    - name: Rivera
+      given-name: Heather
+      prefix: de
+    - "Bien, Elizabeth"
+    - "Baum, Matthew"
+    - "Bortolin, Laura"
+    - "Wang, Shuyu"
+    - "Goeva, Aleksandrina"
+    - "Nemesh, James"
+    - "Kamitaki, Nolan"
+    - "Brumbaugh, Sara"
+    - "Kulp, David"
+    - "McCarroll, Steven A."
+  date: "2018-08"
+  page-range: "1015-1030.e16"
+  url: http://dx.doi.org/10.1016/j.cell.2018.07.028
+  serial-number:
+    doi: "10.1016/j.cell.2018.07.028"
+    issn: "0092-8674"
+  parent:
+    type: periodical
+    title: Cell
+    publisher: Elsevier BV
+    issue: 4
+    volume: 174
+Yang_2024:
+  type: article
+  title: Exploiting spatiotemporal regulation of FZD5 during neural patterning for efficient ventral midbrain specification
+  author:
+    - "Yang, Andy"
+    - "Chidiac, Rony"
+    - "Russo, Emma"
+    - "Steenland, Hendrik"
+    - "Pauli, Quinn"
+    - "Bonin, Robert"
+    - "Blazer, Levi L."
+    - "Adams, Jarrett J."
+    - "Sidhu, Sachdev S."
+    - "Goeva, Aleksandrina"
+    - "Salahpour, Ali"
+    - "Angers, Stephane"
+  date: "2024-03"
+  url: http://dx.doi.org/10.1242/dev.202545
+  serial-number:
+    doi: "10.1242/dev.202545"
+    issn: "1477-9129"
+  parent:
+    type: periodical
+    title: Development
+    publisher: The Company of Biologists
+    issue: 5
+    volume: 151
