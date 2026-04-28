@@ -1,6 +1,6 @@
 /* misc defaults */
 :root {
-  --max-width: 80%;
+  --max-width: 90%;
   --font-sans: "Atkinson Hyperlegible Next", ui-sans-serif, sans-serif;
   --font-mono: "Iosevka Web", ui-monospace, monospace;
   --font-size: 16px
@@ -59,29 +59,15 @@ main {
   margin: 0 auto 10px auto;
 }
 
-/* colour scheme (light + dark) */
-:root {
-  --color-bg: #e2e8f0;
-  --color-text: #1e3765;
-  --color-text-muted: #64748b;
-  --color-link: #0066cc;
-  --color-link-hover: #0052a3;
-  --color-bar: #aad4ff;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #1e3765;
-    --color-text: #e2e8f0;
-    --color-text-muted: #94a3b8;
-    --color-link: #60a5fa;
-    --color-link-hover: #93c5fd;
-  }
-}
-
 body {
   background: var(--color-bg);
   color: var(--color-text);
+}
+
+button {
+  border: 1px solid var(--color-text-muted);
+  border-radius: 3px;
+  background-color: var(--color-bg);
 }
 
 a {
@@ -99,6 +85,7 @@ hr {
 }
 
 /* nav bar alignment/styling */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -106,6 +93,21 @@ header {
   margin: 0.15em 0 0.15em 0;
 }
 
+header nav ul li {
+  border-color: var(--color-text);
+  margin-left: 6px;
+  list-style-type: none;
+  display: inline;
+}
+
+/* navbar spacers */
+header nav ul li:not(:last-child)::after {
+  content: "|";
+  margin-left: 6px;
+  color: var(--color-text-muted);
+}
+
+/* remove extra spacing between header list elements */
 header nav ul {
   font-size: 0em;
 }
@@ -114,20 +116,7 @@ header nav ul li {
   font-size: var(--font-size);
 }
 
-header nav ul li:not(:first-child)::before {
-  content: "|";
-  margin-right: 6px;
-  color: var(--color-text-muted);
-}
-
-header nav ul li {
-  border-color: var(--color-text);
-  margin-right: 6px;
-  list-style-type: none;
-  display: inline;
-}
-
-/* mute link colours in navbar unless hovered */
+/* special navbar link styling */
 header nav a {
   color: var(--color-text-muted);
 }

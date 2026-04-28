@@ -19,41 +19,41 @@
     html.head({
       html.title[Goeva Lab #sym.bar.v #context { document.title }]
       html.meta(charset: "utf-8")
-      html.meta(
-        name: "viewport",
-        content: "width=device-width, initial-scale=1",
-      )
+      html.meta(name: "viewport", content: "width=device-width, initial-scale=1")
       html.link(rel: "icon", type: "image/png", href: "/favicon/16x16.png")
-      for font_id in ("iosevka/Iosevka-Heavy", "ahn/ahn-n") {
-        html.link(
+
+      ("iosevka/Iosevka-Heavy", "ahn/ahn-n")
+        .map(font_id => html.link(
           rel: "prefetch",
           ..("as": "font"),
           href: "/vendor/font/" + font_id + ".woff2",
           type: "font/woff2",
           crossorigin: "anonymous",
-        )
-      }
-      for sheet in ("main.css", "font.css", "entry.css") {
-        html.link(rel: "stylesheet", href: "/css/" + sheet)
-      }
+        ))
+        .join()
+
+      ("main.css": (), "font.css": (), "entry.css": (), "theme.css": (id: "css-theme-pref"))
+        .pairs()
+        .map(((sheet, args)) => html.link(rel: "stylesheet", href: "/css/" + sheet, ..args))
+        .join()
+
+      html.script(defer: true, src: "/js/theme.js")
     })
     html.body(html.main({
       html.header({
         title[Goeva Lab]
-        let nle = (lnk, e) => context {
-          if lower(document.title) == lower(e) {
-            e
-          } else {
-            link(lnk, e)
-          }
-        }
+        let nle = (lnk, e) => html.li(context { if lower(document.title) == lower(e) { e } else { link(lnk, e) } })
 
-        html.nav(list(
-          nle("/")[Home],
-          nle("/research/")[Research],
-          nle("/team/")[Team],
-          spacing: 0em,
-        ))
+        html.nav(
+          html.ul({
+            // `change_button` and `change_theme` functions defined in `/static/js/theme.js` to allow for theme toggle
+            html.li(style: "display:none;", html.elem("button", attrs: (id: "button-dark-switch"))[🌑])
+            html.li(style: "display:none;", html.elem("button", attrs: (id: "button-light-switch"))[🔆])
+            nle("/")[Home]
+            nle("/research/")[Research]
+            nle("/team/")[Team]
+          }),
+        )
       })
       html.hr()
 

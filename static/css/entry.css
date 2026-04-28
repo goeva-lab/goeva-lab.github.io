@@ -30,6 +30,6 @@ div.entry-flex-out img {
   }
 
   div.entry-flex-out img {
-    max-width: 80% !important;
+    max-width: var(--max-width) !important;
   }
 }
