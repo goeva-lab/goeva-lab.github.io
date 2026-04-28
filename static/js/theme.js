@@ -1,37 +1,39 @@
 const theme_pref_mq = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)");
 
-const css_id = "css-theme-pref";
-
 const ls_key = "theme";
 const ls_dark_val = "dark";
 const ls_light_val = "light";
 
-const light_css_path = "/css/light.css";
-const dark_css_path = "/css/dark.css";
+const css_id_base = "css-theme-pref-";
+const button_id_base = "button-switch-";
 
-const css_elem = document.getElementById(css_id);
-const light_button = document.getElementById("button-light-switch");
-const dark_button = document.getElementById("button-dark-switch");
+const css_light = document.getElementById(css_id_base + ls_light_val);
+const css_dark = document.getElementById(css_id_base + ls_dark_val);
+const button_light = document.getElementById(button_id_base + ls_light_val);
+const button_dark = document.getElementById(button_id_base + ls_dark_val);
 
 const change_theme = (to_dark) => {
   if (to_dark) {
-    css_elem.href = dark_css_path;
+    css_light.disabled = true;
+    css_dark.disabled = false;
     localStorage.setItem(ls_key, ls_dark_val);
   } else {
-    css_elem.href = light_css_path;
+    css_dark.disabled = true;
+    css_light.disabled = false;
     localStorage.setItem(ls_key, ls_light_val);
   }
 };
 const change_button = (to_dark) => {
   if (to_dark) {
-    light_button.parentElement.style.display = "inline-block";
-    dark_button.parentElement.style.display = "none";
+    button_light.parentElement.style.display = "inline-block";
+    button_dark.parentElement.style.display = "none";
   } else {
-    dark_button.parentElement.style.display = "inline-block";
-    light_button.parentElement.style.display = "none";
+    button_dark.parentElement.style.display = "inline-block";
+    button_light.parentElement.style.display = "none";
   }
 };
 
+// initialize theme & button
 {
   const to_dark = localStorage.getItem(ls_key);
   if (to_dark) {
@@ -47,16 +49,19 @@ const change_button = (to_dark) => {
 
 // initialize relevant event listeners
 [
-  [light_button, false],
-  [dark_button, true],
+  [button_light, false],
+  [button_dark, true],
 ].forEach(([n, v]) => {
   n.addEventListener("click", function () {
     change_button(v);
     change_theme(v);
   });
 });
+
+// if theme preference is manually changed, override localStorage config
 theme_pref_mq.addEventListener("change", (e) => {
-  if (localStorage.getItem(ls_key) === null) {
-    change_button(e.matches);
-  }
+  change_button(e.matches);
+  css_dark.disabled = true;
+  css_light.disabled = true;
+  localStorage.removeItem(ls_key);
 });

@@ -14,6 +14,10 @@
   )
 }
 
+#let wrap_cache_bust = if "cache_bust" in sys.inputs {
+  e => e + "?cache_bust=" + sys.inputs.at("cache_bust")
+} else { e => e }
+
 #let w = e => {
   html.html({
     html.head({
@@ -25,19 +29,36 @@
       ("iosevka/Iosevka-Heavy", "ahn/ahn-n")
         .map(font_id => html.link(
           rel: "prefetch",
-          ..("as": "font"),
           href: "/vendor/font/" + font_id + ".woff2",
           type: "font/woff2",
           crossorigin: "anonymous",
+          // argument needs to be provided via destructured array since `as` is also a typst keyword
+          ..("as": "font"),
         ))
         .join()
 
-      ("main.css": (), "font.css": (), "entry.css": (), "theme.css": (id: "css-theme-pref"))
+      html.style(
+        (
+          "@import url(\"",
+          wrap_cache_bust("/css/light.css"),
+          "\"); @import url(\"",
+          wrap_cache_bust("/css/dark.css"),
+          "\") (prefers-color-scheme: dark)",
+        ).join(),
+      )
+
+      (
+        "main.css": (),
+        "font.css": (),
+        "entry.css": (),
+        "light.css": ("disabled": true, "id": "css-theme-pref-light"),
+        "dark.css": ("disabled": true, "id": "css-theme-pref-dark"),
+      )
         .pairs()
-        .map(((sheet, args)) => html.link(rel: "stylesheet", href: "/css/" + sheet, ..args))
+        .map(((sheet, args)) => html.link(rel: "stylesheet", href: wrap_cache_bust("/css/" + sheet), ..args))
         .join()
 
-      html.script(defer: true, src: "/js/theme.js")
+      html.script(defer: true, src: wrap_cache_bust("/js/theme.js"))
     })
     html.body(html.main({
       html.header({
@@ -47,8 +68,8 @@
         html.nav(
           html.ul({
             // `change_button` and `change_theme` functions defined in `/static/js/theme.js` to allow for theme toggle
-            html.li(style: "display:none;", html.elem("button", attrs: (id: "button-dark-switch"))[🌑])
-            html.li(style: "display:none;", html.elem("button", attrs: (id: "button-light-switch"))[🔆])
+            html.li(style: "display:none;", html.elem("button", attrs: (id: "button-switch-light"))[🔆])
+            html.li(style: "display:none;", html.elem("button", attrs: (id: "button-switch-dark"))[🌑])
             nle("/")[Home]
             nle("/research/")[Research]
             nle("/team/")[Team]
