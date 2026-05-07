@@ -31,17 +31,13 @@
     He describes his academic interests as the power set of the set: {Bioinformatics, probability, statistics, cancer biology, evolutionary biology}. In his free time he enjoys programming, reading history books, and lifting weights.
     He aspires to become a scientist (university professor) one day.
   ]
-  entry("/img/headshots/yzhu.jpg")[
-    == #link("mailto:yuxi.zhu@mail.utoronto.ca")[Yuxi Zhu] (since 06/2025)
-    I am Yuxi Zhu.
-    I am finishing my fourth year at University of Toronto studying Bioinformatics and Computer Science.
-  ]
 }
 
 = Past members
 
-- #link("https://delipouya.github.io/dp/")[Delaram Poyabahar], currently an #link("https://www.ericandwendyschmidtcenter.org/postdoc-fellows")[Eric and Wendy Schmidt Postdoctoral Fellow] \@ #link("https://www.broadinstitute.org/")[Broad Institute of MIT and Harvard] and #link("https://www.sanger.ac.uk/")[Wellcome Sanger Institute] (May 2025 - May 2026)
-- Alex Rasnitsyn, currently a postdoc at the #link("https://www.weizmann.ac.il")[Weizmann Institute of Science] (March 2025 - March 2026)
+- #link("https://delipouya.github.io/dp/")[Delaram Pouyabahar] (postdoctoral fellow, May 2025 - May 2026), currently an #link("https://www.ericandwendyschmidtcenter.org/postdoc-fellows")[Eric and Wendy Schmidt Postdoctoral Fellow] \@ #link("https://www.broadinstitute.org/")[Broad Institute of MIT and Harvard] and #link("https://www.sanger.ac.uk/")[Wellcome Sanger Institute]
+- Yuxi Zhu (research undergraduate student, May 2025 - May 2026), starting a PhD in Medical Biophysics at UofT in fall 2026
+- Alex Rasnitsyn (postdoctoral fellow, March 2025 - March 2026), currently a postdoc at the #link("https://www.weizmann.ac.il")[Weizmann Institute of Science]
 - Tanaya Datar (research undergraduate student, summer 2025)
 - Samuel Salitra (rotation student, #link("https://moleculargenetics.utoronto.ca/cbmg")[CBMG], fall 2025)
 - Marcia Jude (rotation student, #link("https://moleculargenetics.utoronto.ca/cbmg")[CBMG], fall 2025)
