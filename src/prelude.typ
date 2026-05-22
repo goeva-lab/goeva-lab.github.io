@@ -67,9 +67,9 @@
 
         html.nav(
           html.ul({
-            // `change_button` and `change_theme` functions defined in `/static/js/theme.js` to allow for theme toggle
+            // see `/static/js/theme.js` for theme toggle logic
             html.li(style: "display:none;", html.elem("button", attrs: (id: "button-switch-light"))[🔆])
-            html.li(style: "display:none;", html.elem("button", attrs: (id: "button-switch-dark"))[🌑])
+            html.li(style: "display:none;", html.elem("button", attrs: (id: "button-switch-dark"))[🌒])
             nle("/")[Home]
             nle("/research/")[Research]
             nle("/team/")[Team]
