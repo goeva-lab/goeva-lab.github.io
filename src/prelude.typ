@@ -43,7 +43,7 @@
           wrap_cache_bust("/css/light.css"),
           "\"); @import url(\"",
           wrap_cache_bust("/css/dark.css"),
-          "\") (prefers-color-scheme: dark)",
+          "\") (prefers-color-scheme: dark);",
         ).join(),
       )
 
