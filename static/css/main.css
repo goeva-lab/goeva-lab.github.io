@@ -134,3 +134,6 @@ section[role="doc-bibliography"] ul li::before {
   counter-increment: item -1;
   content: counter(item)". ";
 }
+section[role="doc-bibliography"] ul li span.prefix {
+  display: none;
+}

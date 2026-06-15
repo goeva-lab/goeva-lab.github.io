@@ -2,7 +2,7 @@
 #import "/src/prelude.typ": entry, w; #show: w
 #let bib = e => {
   show "Goeva, A.": e => strong(smallcaps(emph(e)))
-  bibliography(e, style: "apa", full: true, group: none, title: none)
+  bibliography(e, style: "cell", full: true, group: none, title: none)
 }
 
 = Themes
