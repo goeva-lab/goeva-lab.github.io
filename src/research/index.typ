@@ -1,15 +1,9 @@
 #set document(title: [Research])
-#import "/src/prelude.typ": entry, w; #show: w;
-#html.div(hidden: true, id: "bibliography-hidden", bibliography(
-  "bib.yml",
-  style: "apa",
-))
-#show cite: it => {
+#import "/src/prelude.typ": entry, w; #show: w
+#let bib = e => {
   show "Goeva, A.": e => strong(smallcaps(emph(e)))
-  show link: e => { if (type(e.dest) == location) { e.body } else { e } }
-  it
+  bibliography(e, style: "apa", full: true, group: none, title: none)
 }
-#let ctl = (..tl, fn: enum.with(reversed: true)) => fn(..tl.pos().map(cite.with(form: "full")))
 
 = Themes
 
@@ -49,35 +43,12 @@ For a complete list of published works, please see Dr. Goeva's #link("https://sc
 
 == Preprints
 
-#ctl(<Afanasiev_2026>, fn: list)
+#bib("preprints.yml")
 
 == Peer-reviewed Publications
 
-#ctl(
-  <Campbell_2025>,
-  <Goeva_2024>,
-  <Yang_2024>,
-  <Dolan_2023>,
-  <Adler_2023>,
-  <Cable_2021>,
-  <Goeva_2020>,
-  <Goeva_2019>,
-  <Kramer_2019>,
-  <Rodriques_2019>,
-  <Kunin_2019>,
-  <Saunders_2018>,
-  <Kramer_2018>,
-  <Goeva_2014>,
-)
+#bib("pubs.yml")
 
 == Invited Discussions, Commentaries, and Explainers
 
-#ctl(
-  <Blumenthal_2021>,
-  <Goeva_2021a>,
-  <Frost_2021>,
-  <Goeva_2021b>,
-  <Frost_2020>,
-  <Goeva_2016>,
-)
-
+#bib("talks.yml")

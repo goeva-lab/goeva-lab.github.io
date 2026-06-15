@@ -24,18 +24,12 @@ bash './up.sh'
 
 ### building
 
-building the site requires having installed [`typst`](https://github.com/typst/typst?tab=readme-ov-file#installation).
+building the site requires having installed [`typst`](https://github.com/typst/typst?tab=readme-ov-file#installation) (version 0.15 or above).
 
-a simple ([`python`](https://www.python.org/downloads/)) build script is provided ([here](./build.py)) and can be utilized as follows to generate a website build in a subdirectory named `./dist`:
-
-```bash
-python -Wignore './build.py' './dist'
-```
-
-this can be combined with the [`watchexec`](https://github.com/watchexec/watchexec?tab=readme-ov-file#install) tool to have a live-reloading build served at [`localhost:8888`](http://localhost:8888) as follows:
+a live-reloading preview of the site can be built via the following command, with build outputs saved in a subdirectory named `./dist`:
 
 ```bash
-watchexec -w src -w static -r 'python -Wignore build.py ./dist && python -m http.server -d dist -b localhost 8888'
+typst watch --features=html,bundle --format 'bundle' './bundle.typ' './dist'
 ```
 
 ## notes

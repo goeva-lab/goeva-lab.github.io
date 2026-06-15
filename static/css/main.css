@@ -124,3 +124,13 @@ header nav a {
 header nav a:hover {
   color: var(--color-link);
 }
+
+/* bibliography styling */
+section[role="doc-bibliography"] ul {
+  counter-reset: reversed(item);
+  text-align: start;
+}
+section[role="doc-bibliography"] ul li::before {
+  counter-increment: item -1;
+  content: counter(item)". ";
+}

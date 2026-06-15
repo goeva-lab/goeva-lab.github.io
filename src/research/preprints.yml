@@ -1,0 +1,13 @@
+Afanasiev_2026:
+  type: article
+  title: "found: Inferring cell-level perturbation from structured label noise in single-cell data"
+  author:
+    - "Afanasiev, Elia"
+    - "Goeva, Aleksandrina"
+  date: "2026-04"
+  url: http://dx.doi.org/10.64898/2026.04.10.717768
+  serial-number:
+    doi: "10.64898/2026.04.10.717768"
+  parent:
+    type: periodical
+    publisher: openRxiv

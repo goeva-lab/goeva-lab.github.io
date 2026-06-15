@@ -1,0 +1,98 @@
+Blumenthal_2021:
+  type: article
+  title: "Why {Do} {We} {Plot} {Data}?"
+  author:
+    - "Blumenthal, Kelly"
+    - "Goeva, Aleksandrina"
+    - "Stoudt, Sara"
+    - "Trisovic, Ana"
+  date: "2021-09-10"
+  note: https://hdsr.mitpress.mit.edu/pub/49opxv6v
+  parent:
+    type: periodical
+    title: Harvard Data Science Review
+    publisher: The MIT Press
+Frost_2020:
+  type: article
+  title: "Early-Career View on Data Science Challenges: Responsibility, Rigor, and Accessibility"
+  author:
+    - "Frost, Shuang"
+    - "Goeva, Aleksandrina"
+    - "Seaton, William"
+    - "Stoudt, Sara"
+    - "Trisovic, Ana"
+  date: "2020-09"
+  url: http://dx.doi.org/10.1162/99608f92.b211611a
+  serial-number:
+    doi: "10.1162/99608f92.b211611a"
+  parent:
+    type: periodical
+    title: Harvard Data Science Review
+    publisher: MIT Press
+Frost_2021:
+  type: article
+  title: Kaleidoscopic Perspectives on Practicum-Based Data Science Education
+  author:
+    - "Frost, Shuang"
+    - "Goeva, Aleksandrina"
+    - "Pombra, Javin"
+    - "Seaton, Will"
+    - "Stoudt, Sara"
+    - "Trisovic, Ana"
+    - "Wang, Chris"
+    - "Zucker, Catherine"
+  date: "2021-02"
+  url: http://dx.doi.org/10.1162/99608f92.ba6336bc
+  serial-number:
+    doi: "10.1162/99608f92.ba6336bc"
+  parent:
+    type: periodical
+    title: Harvard Data Science Review
+    publisher: MIT Press
+Goeva_2016:
+  type: article
+  title: Comment
+  author:
+    - "Goeva, Aleksandrina"
+    - "Kolaczyk, Eric D."
+  date: "2016-10"
+  page-range: "1405-1408"
+  url: http://dx.doi.org/10.1080/01621459.2016.1245072
+  serial-number:
+    doi: "10.1080/01621459.2016.1245072"
+    issn: "1537-274X"
+  parent:
+    type: periodical
+    title: Journal of the American Statistical Association
+    publisher: Informa UK Limited
+    issue: 516
+    volume: 111
+Goeva_2021a:
+  type: article
+  title: Recipes for Connector Courses From the Early-Career Board Kitchen
+  author:
+    - "Goeva, Aleksandrina"
+    - "Jones, Peyton"
+    - "Stoudt, Sara"
+    - "Trisovic, Ana"
+  date: "2021-06"
+  url: http://dx.doi.org/10.1162/99608f92.f7c60746
+  serial-number:
+    doi: "10.1162/99608f92.f7c60746"
+  parent:
+    type: periodical
+    title: Harvard Data Science Review
+    publisher: MIT Press
+Goeva_2021b:
+  type: article
+  title: "COVID-19 {Case} {Fatality} {Rate} {Bias} {Visual} {Explainer}"
+  author:
+    - "Goeva, Aleksandrina"
+    - "Stoudt, Sara"
+  date: "2021-02-25"
+  note: https://hdsr.mitpress.mit.edu/pub/p6sdle0t
+  parent:
+    type: periodical
+    title: Harvard Data Science Review
+    publisher: The MIT Press
+    issue: Special Issue 1
