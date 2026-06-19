@@ -8,7 +8,7 @@
 
   #html.br()
 
-  The Goeva Lab develops statistical and machine learning methods for high-dimensional biological data, with a focus on single-cell and spatial genomics.
+  The Goeva Lab at the University of Toronto develops statistical and machine learning methods for high-dimensional biological data, with a focus on single-cell and spatial genomics.
   We design principled and interpretable approaches to uncover subtle and heterogeneous biological signals that are often obscured by noise, cell state variation, and complex experimental structure.
 
   #html.br()
