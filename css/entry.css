@@ -1,0 +1,35 @@
+div.entry-flex-out {
+  display: flex;
+  margin: 10px 0 10px 0;
+  gap: 10px;
+  flex-direction: row;
+}
+div.entry-flex-out.entry-swap-ord {
+  flex-direction: row-reverse;
+}
+
+.entry-flex-in h2,
+.entry-flex-in h3 {
+  margin: 0 0 0 0;
+}
+
+div.entry-flex-out img {
+  width: auto;
+  height: auto;
+  align-self: center;
+  border: double black;
+  padding: 4px;
+}
+
+@media (max-width: 700px) {
+  div.entry-flex-out {
+    flex-direction: column;
+  }
+  div.entry-flex-out.entry-swap-ord {
+    flex-direction: column;
+  }
+
+  div.entry-flex-out img {
+    max-width: var(--max-width) !important;
+  }
+}
